@@ -18,27 +18,27 @@ function editComment (id, text) {
 	return {
 		type: EDIT_COMMENT,
 		text,
-		id: uuid.v4()
+		id
 	}
 }
 
 function deleteComment (id) {
 	return {
 		type: DELETE_COMMENT,
-		id: uuid.v4()
+		id
 	}
 }
 
 function addLikeToComment (id) {
 	return {
 		type: ADD_LIKE_TO_COMMENT,
-		id: uuid.v4()
+		id
 	}
 }
 
 function addUnlikeToComment (id) {
 	return {
 		type: ADD_UNLIKE_TO_COMMENT,
-		id: uuid.v4()
+		id
 	}
 }
